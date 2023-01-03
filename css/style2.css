@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url('fonts/PT-Sans.woff') format('woff');
+  }
+  @font-face
+  {
+  font-family: Raleway;
+  src: url('fonts/gotham_book.ttf'),
+       url('fonts/gotham_book.eot'); /* IE9 */
+  }
+  body{margin:0;padding:0;font-family:'Raleway', sans-serif}
+  .carousel-inner>.item>img{margin:0 auto;}
+  .carousel-indicators {bottom: 0px;}
+  .magintop{margin-top: 77px;}
+  blockquote{padding:0 0 0 10px;}
+  blockquote h3{margin:0;padding:0;font-family:'Raleway', sans-serif}
+  h4{color:#e3586c;font-family:'Raleway', sans-serif}
+  .carousel-inner>.item>a>img {margin:0 auto;}
+  blockquote p{font-family:'Raleway', sans-serif;font-size:14px;}
+  .main-nav,.dropdown-menu{background: #fff;box-shadow:1px 1px 4px #CECECE;border:none;}
+  .main-nav .navbar-collapse {max-height: 440px;}
+  .main-nav .nav > li > a , .dropdown-menu li a{padding-top: 14px;padding-bottom: 13px;color:#000;}
+  .main-nav .nav > li > a:hover, .dropdown-menu li a:hover{background:#EEE;color:#000;}
+  .main-nav .nav > li+li:before{content:"/";float:left;margin-top:13px;}
+  .main-nav .navbar-toggle .icon-bar{background-color:#000;}
+  .main-nav .navbar-toggle{margin-top:22px;}
+  .main-nav .navbar-toggle:hover,
+  .main-nav .navbar-toggle:focus {background-color: #C2C2C2;}
+  .top-bigger .nav-logo img{max-height:67px;}
+  .top-bigger .navbar-form{margin-top: 35px;}
+  .top-bigger .nav{margin-top:30px;}
+  .main-nav .navbar-nav>.open>a,
+  .main-nav .navbar-nav>.open>a:hover,
+  .main-nav .navbar-nav .open .dropdown-menu>li>a:hover,
+  .main-nav .navbar-nav .open .dropdown-menu>li>a:focus,
+  .main-nav .navbar-nav>.open>a:focus{background:#EEE;color:#000;}
+
+  .nav-logo{margin: 0;padding: 5px 18px;}
+  .main-nav .navbar-form .form-control{background:rgba(0,0,0,0.6);border: #000;border-right:none;border-top-right-radius:0;border-bottom-right-radius:0;color:#DADADA;}
+  .main-nav .navbar-form .btn-default{background:rgba(0,0,0,0.6);border: #000;border-left:none;border-top-left-radius:0;border-bottom-left-radius:0;line-height:34px;min-height:34px;display:inline-block;}
+  .main-nav .navbar-form .btn-default .glyphicon-search{color:#B2B2B2;}
+  .nav-language li a{padding-left:4px;padding-right:4px;font-size:12px;}
+  .logo{position:absolute;margin-top: 80px;margin-left: 10%;z-index:99;}
+  .plogo img{width:60%;}
+  .btnbar {min-height:72px;background:url(../images/color-bar-bg.jpg);margin:0;}
+  .btnbar .container{max-width:1092px;}
+  .btnbar .btncolor{float:left;}
+  .btnbar .btncolor img{width:100%;}
+  .newsletter > img{min-height:70px !important;}
+  .newsletter .input-group{position:absolute;max-width:266px;margin-top: 26px;margin-left: 43px;}
+  .newsletter .input-group .form-control,.newsletter .input-group .btn{background:rgba(0,0,0,0.6);color:#DADADA;border-color: #000;}
+  .full-container{width:100%;background:#eaeaea;}
+  .full-container .container{max-width:1092px;background:#fff;padding:10px 20px;}
+  .main-content h1{font-family:'PT Sans', sans-serif;font-size: 40px;}
+  .main-content p{font-family:'PT Sans', sans-serif;font-size: 15px;text-align:center;}
+  .readmore{color:#dc0030;text-decoration:none;}
+  .vd-gal .title{color:#dc0030;text-align:left;font-family:'PT Sans', sans-serif;font-size: 30px;}
+  .videoWrapper {position: relative;	padding-bottom: 48%;padding-top: 25px;	height: 0;}
+  .videoWrapper iframe {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+  .vd-gal{padding-bottom:10px;}
+  .vd-gal .thumbnail{padding:0;}
+  .news-container{width:100%;background:#563f8f;}
+  .news-container .container{max-width:1092px;}
+  .news-container .col-md-1,.news-container .col-md-9{margin:30px 0;display:block;}
+  #news-slider ul li{color:#c4bcca}
+  #news-slider ul li h3{margin:0;padding:0;}
+  .page-content h1,.page-content p{font-family:'PT Sans', sans-serif;}
+  .page-content .col-md-9{border-right:#a2a2a2 1px dotted;min-height:400px;}
+  .page-content p{text-align:left;}
+  .news-container .social{background:#634AA0;min-height: 143px;text-align:center;padding:20px 0;}
+  .footer {min-height:40px;background:#eaeaea;margin:0;}
+  .footer p{text-align:center;line-height:40px;color:#000;padding:0;margin:0;}
+  .media-object{border:1px solid #d2d2d2;border-radius:4px;padding:4px;background:#eaeaea;}
+
+  .homethumb h3{font-size: 14px;font-weight: bold;margin-bottom: 8px;margin-top: 8px;min-height: 33px;}
+  .homethumb p{min-height: 60px;}
+  .hometext{padding:10px;text-align:center;font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;}
+  .list-group-item {padding: 10px 10px;}
+  .page-content h1{color: #563f8f;}
+
+
+  .sticky-header .logo{
+    display: none !important;
+  }
+  .col-md-4{
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }

@@ -1,0 +1,41 @@
+/*Responsive Styles*/
+@media screen and (max-width: 1192px) {
+	.plogo img{width:55%;}
+}
+@media screen and (max-width: 1092px) {
+	.logo img{width:70%;}
+	.plogo img{width:45%;}
+}
+@media screen and (max-width: 988px) {
+	.main-nav .container{width:100%;}
+	.main-nav .nav > li > a {padding: 14px 6px 13px;}
+	.logo img{width:55%;}
+	.plogo img{width:35%;}
+	.logo{margin-left: 15%;}
+}
+@media screen and (max-width: 980px) {
+.news-container .social{min-height:inherit;text-align:center;}
+}
+@media screen and (max-width: 870px) {
+	.main-nav .nav > li > a {font-size:12px;}
+	.main-nav .navbar-form .form-control{width:100px;}
+	.plogo img{width:30%;}
+}
+@media screen and (max-width: 768px) {
+	.nav-logo{display:block;}
+	.nav-language li a{padding: 10px 15px;font-size:14px;}
+	.main-nav .nav > li > a {padding:10px 15px;font-size:14px;}
+	.main-nav .navbar-form .form-control{width:auto;}
+	.logo img{width:35%;}
+	.plogo{display:none}
+	.main-nav .nav > li+li:before{display:none;}
+}
+
+@media screen and (max-width: 450px) {
+	.logo{display:none}
+}
+@media screen and (max-width: 400px) {
+	.btnbar .btncolor{width:100%;}
+	.newsletter .input-group{max-width:200px;}
+	.vd-gal .vm{float: initial;}
+}
