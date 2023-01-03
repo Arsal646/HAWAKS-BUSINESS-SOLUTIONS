@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.risebs.com/aboutus.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jan 2023 08:58:24 GMT -->
+<head>
+<meta charset="utf-8">
+<title>Rise Business Solutions - About Us </title>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&amp;family=Open+Sans:wght@300;400;700;800&amp;family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+<script src="../code.jquery.com/jquery-1.8.3.js"></script>
+<script src="../code.jquery.com/jquery-1.8.3.js"></script>
+<script>
+/**
+ * Google Translate Module
+ * @author Rhythm Shahriar
+ * @version 1.0
+ */
+//in body
+//
+
+function googleTranslateInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ru', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate');
+}
+
+/**
+ * This will fire the event on target element
+ * @param element
+ * @param event
+ * @returns {boolean}
+ */
+function fireEvent(element,event){
+  console.log("in Fire Event");
+  if (document.createEventObject){
+    // dispatch for IE
+    //console.log("in IE FireEvent");
+    var evt = document.createEventObject();
+    return element.fireEvent('on'+event,evt)
+  }
+  else{
+    // dispatch for firefox + others
+    //console.log("In HTML5 dispatchEvent");
+    var evt = document.createEvent("HTMLEvents");
+    evt.initEvent(event, true, true ); // event type,bubbling,cancelable
+    return !element.dispatchEvent(evt);
+  }
+}
+
+/**
+ * This will set the language and fire the event
+ * @param lang
+ * e.g onclick="changeLanguage('bn')"
+ */
+function changeLanguage(lang) {
+  var jObj = $('.goog-te-combo');
+  var db = jObj.get(0);
+  jObj.val(lang);
+  fireEvent(db, 'change');
+}
+
+ </script>
+
+</head>
+<body class="hidden-bar-wrapper">
+<div class="page-wrapper">
+
+
+<header class="main-header header-style-one">
+
+<div class="header-upper">
+
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 105px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #33BBFF;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #33BBFF;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(55px);
+}
+
+/*------ ADDED CSS ---------*/
+.oon
+{
+  display: none;
+}
+
+.oon, .ooff
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .oon
+{display: block;}
+
+input:checked + .slider .ooff
+{display: none;}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}
+  
+  
+  
+ #b{
+ 
+ display: none;
+ 
+ } 
+</style>
+<div id="a">
+</div>
+<div id="b">
+</div>
+<script>
+
+
+function myFunction() {
+  var x = document.getElementById("a");
+  var y = document.getElementById("b");
+  if (x.style.display == "none") {
+  
+	
+	
+ 
+  
+    x.style.display = "block";
+	y.style.display = "none";
+	changeLanguage('ar');
+	
+  } else {
+  
+ 
+    x.style.display = "none";
+	y.style.display = "block";
+	changeLanguage('en');
+	
+	
+  }
+  
+  
+  
+  
+  var trans = jQuery('select.goog-te-combo');
+	trans.val('fr')
+	trans.change();
+  
+  
+  
+  
+  
+}
+
+
+
+
+
+
+
+</script>
+
+<div style="display:none" align="center" id="google_translate_element"></div>
+<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{pageLanguage: '', includedLanguages:'en,ar'},
+				'google_translate_element'
+			);
+		}
+	</script>
+<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit">
+	</script>
+
+<div class="auto-container clearfix">
+<div class="pull-left logo-box">
+<div class="logo"><a href="index-2.html"><img src="images/logo.png" alt="" title=""></a></div>
+</div>
+<div class="nav-outer clearfix">
+
+<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+
+<nav class="main-menu navbar-expand-md">
+<div class="navbar-header">
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+<ul class="navigation clearfix">
+<li class=""><a href="index-2.html">Home</a>
+</li>
+<li class="current dropdown"><a href="#">About Us</a>
+</li>
+<li class="dropdown"><a href="#">Our Services</a>
+<ul>
+<li><a href="#">External / Internal Audit</a></li>
+<li><a href="#">Feasibilities Study / Business Plan</a></li>
+<li><a href="#">Company Formation / Liquidation</a></li>
+<li><a href="#">VAT Registration / Return Filing</a></li>
+<li><a href="#">VAT Reconsideration / Penalties</a></li>
+<li><a href="#">Book Keeping Other Accounting Services</a></li>
+<li><a href="#">Information Technology</a></li>
+<li><a href="#">Legal Services / Agreements</a></li>
+</ul>
+</li>
+<li><a href="careers.html">Career</a></li>
+<li><a href="packages.html">Packages</a></li>
+<li><a href="contactus.html">Contact us</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="outer-box clearfix">
+
+
+<div class="phone-box">
+<div class="box-inner">
+<span class="icon flaticon-smartphone-1"></span>
+Call US Today!
+<a style="color:white" href="tel:+971 55 4627 219"><strong>+971 55 4627 219</strong></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="sticky-header">
+<div class="auto-container clearfix">
+
+<div class="logo pull-left">
+<a href="index-2.html" title=""><img src="images/logo-small.png" alt="" title=""></a>
+</div>
+
+<div class="pull-right">
+
+<nav class="main-menu">
+
+</nav>
+
+<div class="outer-box clearfix">
+
+
+<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mobile-menu">
+<div class="menu-backdrop"></div>
+<div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+<nav class="menu-box">
+<div class="nav-logo"><a href="index-2.html"><img src="images/logo-2.html" alt="" title=""></a></div>
+<div class="menu-outer"></div>
+</nav>
+</div>
+</header>
+
+
+<section class="page-title" style="background-image:url(images/background/image-1.jpg)">
+<div class="auto-container">
+<h1>About Us</h1>
+</div>
+</section>
+
+
+<section class="case-section">
+<div class="auto-container">
+<div class="inner-container">
+<div class="clearfix">
+
+<div class="image-column col-lg-6 col-md-12 col-sm-12">
+<div class="inner-column">
+<div class="image wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+<img src="images/resource/aboutus.jpg" alt="" />
+</div>
+</div>
+</div>
+
+<div class="content-column col-lg-6 col-md-12 col-sm-12">
+<div class="inner-column">
+
+<div class="sec-title">
+<h2 align="center">One-Stop Shop For All Your <br> Business Needs</h2>
+<div class="text">Rise Business Solutions is a one-stop shop for all the corporate requirements in UAE. We render a wide range of services including Accounting & Bookkeeping, Audit assistance, Value Added Tax (VAT), Website development and many more. We at Rise Business Solutions believe that there is a thin line between “delivering a service” and “delivering value”, Rise BS exemplifies the passion of its founder and team of professionals to deliver extraordinary client satisfaction, We are committed to highest quality standards. <br><br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="services-section-two style-two">
+<div class="auto-container">
+
+<div class="sec-title centered"><br>
+<h2>Our Vision Mission and Values </h2>
+</div>
+<div class="row clearfix">
+
+<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+<div class="icon flaticon-auction"></div>
+<h5><a>Our Vision</a></h5>
+<div class="text">To be the most sought leading and highly recognized international business services firm, and to be the first choice in our chosen markets.<br><br><br>
+</div>
+</br></br>
+</div>
+</div>
+
+<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+<div class="icon flaticon-law"></div>
+<h5><a>Our Values</a></h5>
+<div class="text"><b>Integrity</b></br>
+Performing the task at hand with utmost dedication & to the best of our abilities.</br>
+<b>Confidentiality</b></br>
+Taking all steps to ensure confidentiality of client data.</br>
+<b>Timely</b></br>
+Always delivering on promised time.
+</div>
+</div>
+</div>
+
+<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+<div class="icon flaticon-balance"></div>
+<h5><a>Our Mission</a></h5>
+<div class="text">To provide cost effective but efficient professional services to the business community and support them to attain the optimum result they can achieve under the prevailing economic conditions. To meet our client’s highest expectations is our goal. 
+<br><br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<footer class="main-footer">
+<div class="auto-container">
+
+<div class="widgets-section">
+
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+<div class="row clearfix">
+
+<div class="big-column col-lg-6 col-md-12 col-sm-12">
+<div class="row clearfix">
+
+<div class="footer-column col-lg-7 col-md-6 col-sm-12">
+<div class="footer-widget logo-widget">
+<div class="logo">
+<a href="index-2.html"><img src="images/logo.png" alt="" /></a>
+</div>
+<div class="text">Wide variety of services, Executed by our diverse Team Of Accounting & Finance Specialists.
+</div>
+
+<ul class="social-nav">
+<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="footer-column col-lg-5 col-md-6 col-sm-12">
+<div class="footer-widget links-widget">
+<h5>Useful links</h5>
+<ul class="footer-list">
+<li><a href="index-2.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="careers.html">Career</a></li>
+<li><a href="packages.html">Packages</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="big-column col-lg-6 col-md-12 col-sm-12">
+<div class="row clearfix">
+
+<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+<div class="footer-widget contact-widget">
+<h5>Office Info</h5>
+<ul>
+<li>
+<span class="icon flaticon-call-1"></span>
+<a href="tel:+971 55 4627 219">+971 55 4627 219</a>
+</li>
+ <li>
+<span class="icon flaticon-email-2"></span>
+<a href="cdn-cgi/l/email-protection.html#c4adaaa2ab84b6adb7a1a6b7eaa7aba9"><span class="__cf_email__" data-cfemail="521b3c343d12203b213730217c313d3f">[email&#160;protected]</span></a>
+</li>
+<li>
+<span class="icon flaticon-maps-and-flags"></span>
+Office location B-1106-64 Grand Tower , Ajman, United Arab Emirates.
+</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="auto-container">
+<div class="copyright">Copyright 2021, Rise Business Solutions. All Rights Reserved.</div>
+</div>
+</div>
+</footer>
+</div>
+
+
+<style>
+#myBtn {
+  
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn2 {
+  
+  position: fixed;
+  bottom: 20px;
+  left: 0px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+</style>
+<a href="https://wa.me/971554627219"> <img src="wa.png" width="80px" height="80px" id="myBtn"></a>
+<div id="myBtn2">
+<label class="switch notranslate">
+<input type="checkbox" id="togBtn" onclick="myFunction()">
+<div class="slider round">
+
+<span class="ooff">English</span>
+<span class="oon">عربي</span>
+
+</div>
+</label>
+</div>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/tilt.jquery.min.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/nav-tool.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+<!-- Mirrored from www.risebs.com/aboutus.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jan 2023 08:58:26 GMT -->
+</html>
