@@ -90,3 +90,7 @@
     padding-left: 4px !important;
     padding-right: 4px !important;
   }
+
+  body{
+    font-family: 'Poppins', sans-serif !important;
+  }

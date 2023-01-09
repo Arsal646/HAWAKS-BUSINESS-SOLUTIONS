@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="abc/css/style.css">
   <link rel="stylesheet" href="abc/css/mobile.css">
   <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/slider.css">
 
   <script src="../code.jquery.com/jquery-1.8.3.js"></script>
   <script src="../code.jquery.com/jquery-1.8.3.js"></script>
@@ -251,74 +252,17 @@
         </script>
 
         <div style="display:none" align="center" id="google_translate_element"></div>
-        <script type="text/javascript">
-          function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-              { pageLanguage: '', includedLanguages: 'en,ar' },
-              'google_translate_element'
-            );
-          }
-        </script>
-        <script type="text/javascript"
-          src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit">
-          </script>
-
         <div class="auto-container clearfix">
-          <style>
-            .center {
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              width: 50%;
-            }
-          </style>
-          <style>
-            @import url(https://fonts.googleapis.com/css?family=Lato:300);
-
-            body {
-              background: #fff;
-              text-align: center;
-              font-family: 'Lato', sans-serif;
-            }
-
-            a {
-              color: #c00000;
-            }
-
-            .logo {
-
-              width: 80px;
-              height: 80px;
-              animation-name: spin;
-              animation-duration: 2.00s;
-              animation-iteration-count: 1;
-              animation-timing-function: linear;
-            }
-
-            @keyframes spin {
-              0% {
-                transform: rotate(0deg);
-              }
-
-              100% {
-                transform: rotate(360deg);
-              }
-            }
-          </style>
           <div class="pull-left logo-box">
-            <a href="index-2.html"><img class="logo center" src="img/logo.jpeg">
-              <h3 align="center" style="color:white">RISE BUSINESS <br />SOLUTIONS</h3>
-              <p align="center" style="color:white">"Rise Above Rest"</p>
+            <a href="index-2.html"><img class="logo center" src="img/logo.png" style="width: 200px;">
+              <!-- <h3 align="center" style="color:white;text-transform: uppercase;">Hawks Business <br />SOLUTIONS</h3>
+              <p align="center" style="color:white">"Rise Above Rest"</p> -->
               </table>
             </a>
           </div>
           <div class="nav-outer clearfix">
-
-            <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-
             <nav class="main-menu navbar-expand-md">
               <div class="navbar-header">
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                   aria-label="Toggle navigation">
@@ -401,7 +345,52 @@
     </header>
 
 
-    <section class="banner-section">
+    <section class="slider_section">
+      <div class="slider">
+        <div class="slide" style="background-image: url('img/banner1.jpeg')">
+          <div class="container">
+            <div class="caption">
+              <h1>SHIPPING LINE AGENCY</h1>
+            </div>
+          </div>
+        </div>
+        <div class="slide active" style="background-image: url('img/banner1.jpeg')">
+          <div class="container">
+            <div class="caption">
+              <h1>Accounting Services</h1>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/main-slider/image-2.jpg')">
+          <div class="container">
+            <div class="caption">
+              <h1>INTERNATIONAL FREIGHT FORWARDING SEA AIR AND LAND</h1>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/main-slider/image-2.jpg')">
+          <div class="container">
+            <div class="caption">
+              <h1>BREAK-BULK AND RO-RO SERVICES</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="prev">&lt;</div>
+        <div class="next">&gt;</div>
+      </div>
+
+      <div class="indicator">
+        <div onclick="indicateSlide(this)" id="0" class="active">1</div>
+        <div onclick="indicateSlide(this)" id="1" class="">2</div>
+        <div onclick="indicateSlide(this)" id="2" class="">3</div>
+        <div onclick="indicateSlide(this)" id="3" class="">4</div>
+      </div>
+    </section>
+
+    <!-- <section class="banner-section">
 
       <div class="main-slider-carousel owl-carousel owl-theme">
         <div class="slide" style="background-image: url(images/main-slider/image-1.jpg)">
@@ -438,288 +427,353 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <section class="pt-5">
       <div class="full-container mt-5">
         <div class="container">
-            <div class="row main-content">
-                <h1 class="text-center " style="margin-top: 40px;">Welcome to Hawaks Business Solutions</h1>
-                <div class="hometext">Hawaks Business Solutions is registered with Ministry of Economy of United Arab Emirates (UAE) through license number 708023. It is one of the leading organizations of UAE, Providing all type of business solution services, such as administrative consultancies and studies to public departments and companies, administrative performance analysis, procedural engineering, lying out flow-charts and related documents circulation, internal policy formulation, organizational restructuring, strategic plans development, innovating work procedures, designing balanced scorecards.<span style="font-family: Arial, Verdana, sans-serif; font-size: 12px;">... </span><a class="readmore" href="/page/about-us" style="font-family: Arial, Verdana, sans-serif; font-size: 12px;">Read more</a></div>
-                <p class="text-center" style="margin:20px 0;"><img src="https://strategists.ae/template/images/star.jpg"></p>
+          <div class="row main-content">
+            <h1 class="text-center " style="margin-top: 40px;">Welcome to Hawaks Business Solutions</h1>
+            <div class="hometext">Hawaks Business Solutions is registered with Ministry of Economy of United Arab
+              Emirates (UAE) through license number 708023. It is one of the leading organizations of UAE, Providing all
+              type of business solution services, such as administrative consultancies and studies to public departments
+              and companies, administrative performance analysis, procedural engineering, lying out flow-charts and
+              related documents circulation, internal policy formulation, organizational restructuring, strategic plans
+              development, innovating work procedures, designing balanced scorecards.<span
+                style="font-family: Arial, Verdana, sans-serif; font-size: 12px;">... </span><a class="readmore"
+                href="/page/about-us" style="font-family: Arial, Verdana, sans-serif; font-size: 12px;">Read more</a>
+            </div>
+            <p class="text-center" style="margin:20px 0;"><img src="https://strategists.ae/template/images/star.jpg">
+            </p>
+          </div>
+
+          <div class="row vd-gal">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail homethumb">
+                <a href="/page/bookkeeping-accounting-outsourcing-services">
+                  <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg"
+                    alt="Bookkeeping &amp; Accounting Outsourcing Services">
+                </a>
+                <div class="caption">
+                  <h3>Bookkeeping &amp; Accounting Outsourcing Services</h3>
+                  <p>Well-kept accounts form a basis for sound financial decisions and enhance the cr..<a
+                      href="/page/bookkeeping-accounting-outsourcing-services" class="readmore">[+]</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail homethumb">
+                <a href="/page/internal-audit">
+                  <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg"
+                    alt="Internal Audit ">
+                </a>
+                <div class="caption">
+                  <h3>Internal Audit </h3>
+                  <p>
+                    Internal Audit Firm in Dubai
+                    While your business may have internal control, It ..
+                    <a href="/page/internal-audit" class="readmore">[+]</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail homethumb">
+                <a href="/page/vat-services">
+                  <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="VAT Services">
+                </a>
+                <div class="caption">
+                  <h3>VAT Services</h3>
+                  <p>
+
+
+                    The GCC states are developing a broad framework for the introduction of VA..<a
+                      href="/page/vat-services" class="readmore">[+]</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail homethumb">
+                <a href="/page/183-corporate-advisory-services">
+                  <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg"
+                    alt="Corporate Advisory Services">
+                </a>
+                <div class="caption">
+                  <h3>Corporate Advisory Services</h3>
+                  <p>World is continuously&nbsp;changes due to &nbsp;globalization and change in tech..<a
+                      href="/page/corporate-advisory-services" class="readmore">[+]</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail homethumb">
+                <a href="/page/feasibility-study-and-business-plan">
+                  <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg"
+                    alt="Feasibility Study and Business Plan">
+                </a>
+                <div class="caption">
+                  <h3>Feasibility Study and Business Plan</h3>
+                  <p>
+                    What is Feasibility Study?
+                    A feasibility study is the analysis of the practicab..<a
+                      href="/page/feasibility-study-and-business-plan" class="readmore">[+]</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail homethumb">
+                <a href="/page/information-technology-services">
+                  <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg"
+                    alt="Information Technology Services">
+                </a>
+                <div class="caption">
+                  <h3>Information Technology Services</h3>
+                  <p>As we all know, the ubiquitous desktop personal computer (PC) is now being linke..<a
+                      href="/page/information-technology-services" class="readmore">[+]</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail homethumb">
+                <a href="/page/risk-management-control-services">
+                  <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg"
+                    alt="Risk Management &amp; Control Services">
+                </a>
+                <div class="caption">
+                  <h3>Risk Management &amp; Control Services</h3>
+                  <p>
+                    Controls mitigate risk. &nbsp;A lack of internal contr..<a
+                      href="/page/risk-management-control-services" class="readmore">[+]</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail homethumb">
+                <a href="/page/outsourcing-services">
+                  <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg"
+                    alt="Outsourcing Services">
+                </a>
+                <div class="caption">
+                  <h3>Outsourcing Services</h3>
+                  <p>Nearly all major companies outsource at least part of their operation. And some ..<a
+                      href="/page/outsourcing-services" class="readmore">[+]</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail homethumb">
+                <a href="/page/strategy-policy-formulation-services">
+                  <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg"
+                    alt="Strategy &amp; Policy Formulation Services">
+                </a>
+                <div class="caption">
+                  <h3>Strategy &amp; Policy Formulation Services</h3>
+                  <p>The changing market environment sometimes requires a new direction and/or perspe..<a
+                      href="/page/strategy-policy-formulation-services" class="readmore">[+]</a></p>
+                </div>
+              </div>
             </div>
 
-            <div class="row vd-gal">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail homethumb">
-                        <a href="/page/bookkeeping-accounting-outsourcing-services">
-                            <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="Bookkeeping &amp; Accounting Outsourcing Services">
-                        </a>
-                        <div class="caption">
-                            <h3>Bookkeeping &amp; Accounting Outsourcing Services</h3>
-                            <p>Well-kept accounts form a basis for sound financial decisions and enhance the cr..<a href="/page/bookkeeping-accounting-outsourcing-services" class="readmore">[+]</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail homethumb">
-                        <a href="/page/internal-audit">
-                            <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="Internal Audit ">
-                        </a>
-                        <div class="caption">
-                            <h3>Internal Audit </h3>
-                            <p>
-                                Internal Audit Firm in Dubai
-                                While your business may have internal control, It ..
-                                <a href="/page/internal-audit" class="readmore">[+]</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail homethumb">
-                        <a href="/page/vat-services">
-                            <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="VAT Services">
-                        </a>
-                        <div class="caption">
-                            <h3>VAT Services</h3>
-                            <p>
-
-
-                                The GCC states are developing a broad framework for the introduction of VA..<a href="/page/vat-services" class="readmore">[+]</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail homethumb">
-                        <a href="/page/183-corporate-advisory-services">
-                            <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="Corporate Advisory Services">
-                        </a>
-                        <div class="caption">
-                            <h3>Corporate Advisory Services</h3>
-                            <p>World is continuously&nbsp;changes due to &nbsp;globalization and change in tech..<a href="/page/corporate-advisory-services" class="readmore">[+]</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail homethumb">
-                        <a href="/page/feasibility-study-and-business-plan">
-                            <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="Feasibility Study and Business Plan">
-                        </a>
-                        <div class="caption">
-                            <h3>Feasibility Study and Business Plan</h3>
-                            <p>
-                                What is Feasibility Study?
-                                A feasibility study is the analysis of the practicab..<a href="/page/feasibility-study-and-business-plan" class="readmore">[+]</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail homethumb">
-                        <a href="/page/information-technology-services">
-                            <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="Information Technology Services">
-                        </a>
-                        <div class="caption">
-                            <h3>Information Technology Services</h3>
-                            <p>As we all know, the ubiquitous desktop personal computer (PC) is now being linke..<a href="/page/information-technology-services" class="readmore">[+]</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail homethumb">
-                        <a href="/page/risk-management-control-services">
-                            <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="Risk Management &amp; Control Services">
-                        </a>
-                        <div class="caption">
-                            <h3>Risk Management &amp; Control Services</h3>
-                            <p>
-                                Controls mitigate risk. &nbsp;A lack of internal contr..<a href="/page/risk-management-control-services" class="readmore">[+]</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail homethumb">
-                        <a href="/page/outsourcing-services">
-                            <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="Outsourcing Services">
-                        </a>
-                        <div class="caption">
-                            <h3>Outsourcing Services</h3>
-                            <p>Nearly all major companies outsource at least part of their operation. And some ..<a href="/page/outsourcing-services" class="readmore">[+]</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail homethumb">
-                        <a href="/page/strategy-policy-formulation-services">
-                            <img src="https://strategists.ae/adminpanel/dynamic-files/multimedia/image/1.jpg" alt="Strategy &amp; Policy Formulation Services">
-                        </a>
-                        <div class="caption">
-                            <h3>Strategy &amp; Policy Formulation Services</h3>
-                            <p>The changing market environment sometimes requires a new direction and/or perspe..<a href="/page/strategy-policy-formulation-services" class="readmore">[+]</a></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
 
 
 
         </div>
-    </div>
+      </div>
     </section>
 
 
 
-    <section class="welcome-section" style="background-image: url(images/background/pattern-1.png)">
-      <div class="auto-container">
-        <div class="inner-container">
-          <div class="clearfix">
-            <h1 align="center">Recent News</h1>
-
-            <div class="page1-wrapper">
-              <div class="post1-slider">
-                <div class="post1-wrapper">
-                  <div class="post1">
-                    <a href="singleblog16d7.html?varname=0"><img
-                        src="blog/100-Foreign-Ownership-in-The-Mainland-770x396.jpg" alt="" class="slider1-image" /></a>
-                    <div class="post1-info">
-                      <a href="singleblog16d7.html?varname=0">
-                        <h4>100% foreign ownership on UAE mainland</h4>
-                      </a>
-                      <a href="singleblog16d7.html?varname=0"><button class="theme-btn btn-style-two"
-                          type="submit"><span class="txt">Read More <i
-                              class="arrow flaticon-right"></i></span></button></a>
-                    </div>
-                  </div>
-                  <div class="post1">
-                    <a href="singleblog9585.html?varname=1"><img
-                        src="blog/ddbd6188-6590-4398-9c7d-05b7e2bd5886_16x9_1200x676.jpg" alt=""
-                        class="slider1-image" /></a>
-                    <div class="post1-info">
-                      <a href="singleblog9585.html?varname=1">
-                        <h4>UAE set to roll out Green Visas</h4>
-                      </a>
-                      <a href="singleblog9585.html?varname=1"><button class="theme-btn btn-style-two"
-                          type="submit"><span class="txt">Read More <i
-                              class="arrow flaticon-right"></i></span></button></a>
-                    </div>
-                  </div>
-                  <div class="post1">
-                    <a href="singleblog05ab.html?varname=2"><img src="blog/1580636727038.jpg" alt=""
-                        class="slider1-image" /></a>
-                    <div class="post1-info">
-                      <a href="singleblog05ab.html?varname=2">
-                        <h4>Tax Residency Certificate in UAE</h4>
-                      </a>
-                      <a href="singleblog05ab.html?varname=2"><button class="theme-btn btn-style-two"
-                          type="submit"><span class="txt">Read More <i
-                              class="arrow flaticon-right"></i></span></button></a>
-                    </div>
-                  </div>
-                  <div class="post1">
-                    <a href="singleblogf6a1.html?varname=3"><img
-                        src="blog/VAT-for-UAE-Artists-Influencers-A-Checklist-to-Ensure-Compliance.jpg" alt=""
-                        class="slider1-image" /></a>
-                    <div class="post1-info">
-                      <a href="singleblogf6a1.html?varname=3">
-                        <h4>VAT on Artists & Influencers in UAE</h4>
-                      </a>
-                      <a href="singleblogf6a1.html?varname=3"><button class="theme-btn btn-style-two"
-                          type="submit"><span class="txt">Read More <i
-                              class="arrow flaticon-right"></i></span></button></a>
-                    </div>
-                  </div>
+    <section class="blog-section pt-100 pb-70">
+      <div class="container">
+        <div class="section-title text-center">
+          <span>Latest News</span>
+          <h2>News of Our Transportation</h2>
+          <p>Found parents would couldn't said on. That, feedback there made he was may blind you simple, its yet
+            a own blind you ago hand.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 wow animate__ animate__fadeInUp  animated" data-wow-duration="1s"
+            style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+            <div class="blog-card">
+              <div class="blog-img">
+                <a href="">
+                  <img src="https://arsal646.github.io/fixaaaa/assets/img/pic1.jpg" alt="blog image">
+                </a>
+              </div>
+              <div class="blog-text">
+                <h3>
+                  <a href="">Liberalization of Transport &amp; Logistics service</a>
+                </h3>
+                <ul>
+                  <li>
+                    <i class="icofont-ui-calendar"></i>
+                    01 April, 2021
+                  </li>
+                </ul>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                  has been the industry's standard dummy text.</p>
+                <div class="blog-btn text-left">
+                  <a href="#">
+                    <i class="icofont-rounded-double-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
-
-
-    </section>
-    <section class="welcome-section" style="background-image: url(images/background/pattern-1.png)">
-      <div class="auto-container">
-        <div class="inner-container">
-          <div class="clearfix">
-
-            <div class="image-column col-lg-6 col-md-12 col-sm-12">
-              <div class="inner-column">
-                <div class="image titlt" data-tilt data-tilt-max="2">
-                  <img src="images/resource/welcome.jpg" alt="" />
+          </div>
+          <div class="col-lg-4 col-sm-6 wow animate__ animate__fadeInUp  animated" data-wow-duration="1s"
+            data-wow-delay=".2s"
+            style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+            <div class="blog-card">
+              <div class="blog-img">
+                <a href=""><img src="https://arsal646.github.io/fixaaaa/assets/img/pic1.jpg" alt="blog image"></a>
+              </div>
+              <div class="blog-text">
+                <h3>
+                  <a href="">New Vehicles in the Fleet – See Our New Scania Trucks</a>
+                </h3>
+                <ul>
+                  <li>
+                    <i class="icofont-ui-calendar"></i>
+                    02 April, 2021
+                  </li>
+                </ul>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                  has been the industry's standard dummy text.</p>
+                <div class="blog-btn text-left">
+                  <a href="#">
+                    <i class="icofont-rounded-double-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
-
-            <div class="content-column col-lg-6 col-md-12 col-sm-12">
-              <div class="inner-column">
-
-                <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                  <div class="sec-title">
-                    <h2>Welcome to Rise Business Solutions</h2>
-                    <div class="text">We at Rise Business Solutions believe that there is a thin line between
-                      “delivering a service” and “delivering value”, Rise BS exemplifies the passion of its founder and
-                      team of professionals to deliver extraordinary client satisfaction, We are committed to highest
-                      quality standards.
-                    </div>
-                  </div>
-                  <ul class="list-style-one">
-                    <li>External / Internal Audit. </li>
-                    <li>Feasibilities Study / Business Plan.</li>
-                    <li>Company Formation / Liquidation.</li>
-                    <li>VAT Registration / Return Filing.</li>
-                    <li>VAT Reconsideration / Penalties.</li>
-                    <li>Book Keeping Other Accounting Services.</li>
-                    <li>Information Technology.</li>
-                    <li>Legal Services / Agreements.</li>
-                  </ul>
-                  <div class="btns-box">
-
-                  </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0 wow animate__ animate__fadeInUp  animated"
+            data-wow-duration="1s" data-wow-delay=".2s"
+            style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+            <div class="blog-card">
+              <div class="blog-img">
+                <a href=""><img src="https://arsal646.github.io/fixaaaa/assets/img/pic1.jpg" alt="blog image"></a>
+              </div>
+              <div class="blog-text">
+                <h3>
+                  <a href="">Our Driver Confirm Lorry Repaired as soon as Possible</a>
+                </h3>
+                <ul>
+                  <li>
+                    <i class="icofont-ui-calendar"></i>
+                    03 April, 2021
+                  </li>
+                </ul>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                  has been the industry's standard dummy text.</p>
+                <div class="blog-btn text-left">
+                  <a href="#">
+                    <i class="icofont-rounded-double-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
     </section>
 
 
+    <section style="display: flex;flex-wrap: wrap;padding: 40px 0;" class="callusSection">
+
+
+      <div class="col-md-6">
+        <img src="https://aaa-cas.com/wp-content/uploads/2020/11/2683984.png" alt="">
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="col2">
+          <div>
+            <div>
+
+
+              <!-- Style 1 Start -->
+              <div class="rs-contact-box">
+
+                <div class="address-item vertical boxstyle1">
+
+                  <div class="address-icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+
+                  <div class="address-text">
 
 
 
 
-
-
-
-    <section id="cta-section">
-      <div class="cta">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-md-9">
-              <h1>Download Company Profile</h1>
-              <p>One-Stop shop for all the corporate requirements in UAE. Our mission is to provide cost effective but
-                efficient professional services to the business community and support them to attain the optimum result
-                they can achieve under the prevailing economic conditions.</p>
-            </div>
-            <div class="col-md-3">
-              <div class="cta-btn wow bounceInRight" data-wow-delay="0.2s">
-                <a href="pp.pdf" download><button class="theme-btn btn-style-two" type="submit"><span
-                      class="txt">Download</span></button></a>
+                  </div>
+                </div>
               </div>
+
+              <!-- Style 1 End -->
+
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-ae47044 elementor-widget elementor-widget-rs-heading"
+            data-id="ae47044" data-element_type="widget" data-widget_type="rs-heading.default">
+            <div class="elementor-widget-container">
+              <div class="rs-heading default center ">
+                <div class="title-inner">
+                  <h2 class="title"><span class="watermark"></span>CALL US 24/7</h2>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-bfd7f19 elementor-widget elementor-widget-rs-heading"
+            data-id="bfd7f19" data-element_type="widget" data-widget_type="rs-heading.default">
+            <div class="elementor-widget-container">
+              <div class="rs-heading default center ">
+                <div class="title-inner">
+                  <h3 class="title phone"><span class="first-word"> (+971) </span> 4228 7774</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-e72e971 elementor-widget elementor-widget-rs-heading"
+            data-id="e72e971" data-element_type="widget" data-widget_type="rs-heading.default">
+            <div class="elementor-widget-container">
+              <div class="rs-heading default center ">
+                <div class="title-inner">
+                </div>
+                <div class="description">
+                  <p>Have any idea or project for in your mind call us or schedule a appointment. Our representative
+                    will reply you shortly.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-6051a9a elementor-widget elementor-widget-rs-button"
+            data-id="6051a9a" data-element_type="widget" data-widget_type="rs-button.default">
+            <div class="elementor-widget-container">
+
+
+              <div class="rs-btn">
+                <a class="readon rs_button" href="http://aaa-cas.com/contact/">
+                  <span class="btn_text" style="color: white !important;">Let's Talk</span>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
 
 
 
@@ -778,7 +832,132 @@
     </section>
 
 
-    <footer class="main-footer">
+    <div id="footer">
+      <footer id="header" class="footer-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-widget">
+                <a >
+                  <img src="img/logo.jpg" alt="logo">
+                </a>
+                <ul>
+                  <li>
+                    <i class="icofont-phone"></i>
+                    <a href="tel:00971 56 6495103">
+                      00971 56 6495773
+                    </a>
+                  </li>
+                  <li>
+                    <i class="icofont-ui-message"></i>
+                    <a href="mailto:hello@abfshipping.com">
+                      hello@hawks.com
+                    </a>
+                  </li>
+                  <li class="footer_address">
+                    <i class="icofont-location-pin"></i>
+                    Deira, Duabi
+                    Office 425, Block B ,Business Village
+                  </li>
+                </ul>
+                <div class="footer-social">
+                  <a href="#" target="_blank">
+                    <i class="icofont-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="icofont-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="icofont-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="icofont-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-widget">
+                <h3>Our Services</h3>
+                <ul>
+                  <li>
+                    <a >Air Freight</a>
+                  </li>
+                  <li>
+                    <a >Road Freight</a>
+                  </li>
+                  <li>
+                    <a >Ocean Freight</a>
+                  </li>
+                  <li>
+                    <a >Warehousing</a>
+                  </li>
+                  <li>
+                    <a >Storage</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-widget">
+                <h3>Our Support</h3>
+                <ul>
+                  <li>
+                    <a >Privacy &amp; Policy</a>
+                  </li>
+                  <li>
+                    <a >FAQS</a>
+                  </li>
+                  <li>
+                    <a >Terms &amp; Conditions</a>
+                  </li>
+                  <li>
+                    <a >Contact Us</a>
+                  </li>
+                  <li>
+                    <a >About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-widget">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li>
+                    <a >Home</a>
+                  </li>
+                  <li>
+                    <a >About Us</a>
+                  </li>
+                  <li>
+                    <a >Our Services</a>
+                  </li>
+                  <li>
+                    <a >Our Blog</a>
+                  </li>
+                  <li>
+                    <a >Eemrgency Support</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area">
+          <p>Copyright @Hawaks All Rights Reserved by <a href="#" target="_blank">Hawaks Business Solutions</a>
+          </p>
+        </div>
+        <div class="lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </footer>
+
+
+
+      <!-- <footer class="main-footer">
       <div class="auto-container">
         <div class="row wow bounceInLeft" data-wow-delay="0.4s">
 
@@ -858,88 +1037,90 @@
           </div>
         </div>
       </div>
-    </footer>
-  </div>
-
-
-  <style>
-    #myBtn {
-
-      position: fixed;
-      bottom: 20px;
-      right: 0px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 15px;
-      border-radius: 4px;
-    }
-
-    #myBtn2 {
-
-      position: fixed;
-      bottom: 20px;
-      left: 0px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 15px;
-      border-radius: 4px;
-    }
-  </style>
-  <a href="https://wa.me/+971 52 598 3791"> <img src="wa.png" width="80px" height="80px" id="myBtn"></a>
-  <div id="myBtn2">
-    <div class="skill-bar wow slideInLeft" data-wow-delay="0.1s">
-      <label class="switch ">
-        <input type="checkbox" id="togBtn" onclick="myFunction()">
-        <div class="slider round">
-
-          <span class="ooff notranslate">English</span>
-          <span class="oon notranslate">عربي</span>
-
-        </div>
-      </label>
+    </footer> -->
     </div>
-  </div>
 
-  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-  <script src="abc/inc/jquery/jquery-1.11.1.min.js"></script>
-  <script src="abc/inc/bootstrap/js/bootstrap.min.js"></script>
-  <script src="abc/inc/owl-carousel/js/owl.carousel.min.js"></script>
-  <script src="abc/inc/stellar/js/jquery.stellar.min.js"></script>
-  <script src="abc/inc/animations/js/wow.min.js"></script>
-  <script src="abc/inc/waypoints.min.js"></script>
-  <script src="abc/inc/isotope.pkgd.min.js"></script>
-  <script src="abc/inc/classie.js"></script>
-  <script src="abc/inc/jquery.easing.min.js"></script>
-  <script src="abc/inc/jquery.counterup.min.js"></script>
-  <script src="abc/inc/smoothscroll.js"></script>
 
-  <script src="abc/js/theme.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="js/jquery.fancybox.js"></script>
-  <script src="js/appear.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/tilt.jquery.min.js"></script>
-  <script src="js/jquery.paroller.min.js"></script>
-  <script src="js/owl.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/nav-tool.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/script.js"></script>
+    <style>
+      #myBtn {
 
-  <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
 
-  <script type="text/javascript" src="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
+      #myBtn2 {
 
-  <script src="js/scripts.js"></script>
+        position: fixed;
+        bottom: 20px;
+        left: 0px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+    </style>
+    <a href="https://wa.me/+971 52 598 3791"> <img src="wa.png" width="80px" height="80px" id="myBtn"></a>
+    <div id="myBtn2">
+      <div class="skill-bar wow slideInLeft" data-wow-delay="0.1s">
+        <label class="switch ">
+          <input type="checkbox" id="togBtn" onclick="myFunction()">
+          <div class="slider round">
+
+            <span class="ooff notranslate">English</span>
+            <span class="oon notranslate">عربي</span>
+
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <script src="js/slider.js"></script>
+
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="abc/inc/jquery/jquery-1.11.1.min.js"></script>
+    <script src="abc/inc/bootstrap/js/bootstrap.min.js"></script>
+    <script src="abc/inc/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="abc/inc/stellar/js/jquery.stellar.min.js"></script>
+    <script src="abc/inc/animations/js/wow.min.js"></script>
+    <script src="abc/inc/waypoints.min.js"></script>
+    <script src="abc/inc/isotope.pkgd.min.js"></script>
+    <script src="abc/inc/classie.js"></script>
+    <script src="abc/inc/jquery.easing.min.js"></script>
+    <script src="abc/inc/jquery.counterup.min.js"></script>
+    <script src="abc/inc/smoothscroll.js"></script>
+
+    <script src="abc/js/theme.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/jquery.paroller.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/nav-tool.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 <!-- Mirrored from www.risebs.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jan 2023 08:58:13 GMT -->
