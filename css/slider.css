@@ -7,6 +7,9 @@ body{
 *{
 	box-sizing: border-box;
 }
+.slider_section h2{
+  text-transform: capitalize;
+}
 
 .slider_section{
 	height: 100vh;
@@ -185,6 +188,16 @@ body{
 	}
 
 }
+.slider_section .container {
+  color: white;
+  background-color: rgb(0 0 0 / 24%);
+  border-radius: 20px 20px 20px 20px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px !important;
+}
+#myBtn2 {
+  display: none;
+}
 
 @media(min-width:900px){
     .main-header .header-upper .logo-box {
@@ -288,6 +301,12 @@ body{
     padding: 20px;
     border-radius: 10p;
     border-radius: 40px;
+}
+.blog-section .blog-card .blog-text p {
+  margin-bottom: 18px;
+  color: black;
+  font-family: popin;
+  font-family: 'Poppins', sans-serif !important;
 }
 .rs-contact-box {
     margin: 20px 0;
@@ -1737,7 +1756,7 @@ h3 {
 
 .blog-section .blog-card .blog-text {
   padding: 30px;
-  height: 420px;
+  height: 450px;
 }
 
 .blog-section .blog-card .blog-text h3 {
@@ -4547,6 +4566,10 @@ h3 {
     position: relative;
      background-color:white
 }
+.homethumb p {
+    min-height: 60px;
+    color: black;
+}
 @media(max-width:800px){
 	.sticky-header {
 		position: fixed;
@@ -4565,6 +4588,10 @@ h3 {
 		-ms-transition: all 500ms ease;
 		-o-transition: all 500ms ease;
 	}
+	.blog-section .blog-card .blog-text {
+		padding: 30px;
+		height: 270px;
+	}
 }
 @media only screen and (max-width: 479px)
 {
@@ -4574,13 +4601,38 @@ h3 {
 		margin: 0;
 	}
 
+
 }
-.blog-section .container h2, p {
+.blog-section .container h2,.blog-section .container h2 p {
+    color: black;
+}
+.blog-section .blog-card .blog-text p {
+    margin-bottom: 18px;
     color: black;
 }
 .blog-section .blog-card .blog-text {
     padding: 30px;
-    height: 310px;
+    height: 350px;
+}
+.description p {
+    font-size: 19px;
+    text-align: center;
+    margin: 30px;
+}
+.blog-section .blog-card .blog-text h3 a {
+  color: #3c0c70;
+  text-transform: uppercase;
+}
+
+.services-section-two {
+  background: black !important;
+}
+.sec-title h2 {
+  color: white;
+}
+.case-section .sec-title h2 {
+  /* color: white; */
+  color: black;
 }
 
 

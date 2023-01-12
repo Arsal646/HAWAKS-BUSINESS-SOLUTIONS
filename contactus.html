@@ -2,552 +2,629 @@
 <html>
 
 <!-- Mirrored from www.risebs.com/contactus.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jan 2023 08:58:27 GMT -->
+
 <head>
-<meta charset="utf-8">
-<title>Rise Business Solutions - Contact Us </title>
+  <meta charset="utf-8">
+  <title>Hawaks Business Solutions - Contact Us </title>
 
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bellefair&amp;family=Open+Sans:wght@300;400;700;800&amp;family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="abc/css/reset.css">
+  <link rel="stylesheet" href="abc/css/style.css">
+  <link rel="stylesheet" href="abc/css/mobile.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bellefair&amp;family=Open+Sans:wght@300;400;700;800&amp;family=Oswald:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
-<script src="../code.jquery.com/jquery-1.8.3.js"></script>
-<script src="../code.jquery.com/jquery-1.8.3.js"></script>
-<script>
-/**
- * Google Translate Module
- * @author Rhythm Shahriar
- * @version 1.0
- */
-//in body
-//
+  <script src="../code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="../code.jquery.com/jquery-1.8.3.js"></script>
+  <script>
+    /**
+     * Google Translate Module
+     * @author Rhythm Shahriar
+     * @version 1.0
+     */
+    //in body
+    //
 
-function googleTranslateInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ru', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate');
-}
+    function googleTranslateInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,ru', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate');
+    }
 
-/**
- * This will fire the event on target element
- * @param element
- * @param event
- * @returns {boolean}
- */
-function fireEvent(element,event){
-  console.log("in Fire Event");
-  if (document.createEventObject){
-    // dispatch for IE
-    //console.log("in IE FireEvent");
-    var evt = document.createEventObject();
-    return element.fireEvent('on'+event,evt)
-  }
-  else{
-    // dispatch for firefox + others
-    //console.log("In HTML5 dispatchEvent");
-    var evt = document.createEvent("HTMLEvents");
-    evt.initEvent(event, true, true ); // event type,bubbling,cancelable
-    return !element.dispatchEvent(evt);
-  }
-}
+    /**
+     * This will fire the event on target element
+     * @param element
+     * @param event
+     * @returns {boolean}
+     */
+    function fireEvent(element, event) {
+      console.log("in Fire Event");
+      if (document.createEventObject) {
+        // dispatch for IE
+        //console.log("in IE FireEvent");
+        var evt = document.createEventObject();
+        return element.fireEvent('on' + event, evt)
+      }
+      else {
+        // dispatch for firefox + others
+        //console.log("In HTML5 dispatchEvent");
+        var evt = document.createEvent("HTMLEvents");
+        evt.initEvent(event, true, true); // event type,bubbling,cancelable
+        return !element.dispatchEvent(evt);
+      }
+    }
 
-/**
- * This will set the language and fire the event
- * @param lang
- * e.g onclick="changeLanguage('bn')"
- */
-function changeLanguage(lang) {
-  var jObj = $('.goog-te-combo');
-  var db = jObj.get(0);
-  jObj.val(lang);
-  fireEvent(db, 'change');
-}
+    /**
+     * This will set the language and fire the event
+     * @param lang
+     * e.g onclick="changeLanguage('bn')"
+     */
+    function changeLanguage(lang) {
+      var jObj = $('.goog-te-combo');
+      var db = jObj.get(0);
+      jObj.val(lang);
+      fireEvent(db, 'change');
+    }
 
- </script>
+  </script>
 
 </head>
+
 <body class="hidden-bar-wrapper">
-<div class="page-wrapper">
+  <div class="page-wrapper">
 
 
-<header class="main-header header-style-one">
+    <header class="main-header">
 
-<div class="header-upper">
+      <div class="header-upper">
 
-<style>
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 105px;
-  height: 34px;
-}
+        <div style="display:none" align="center" id="google_translate_element"></div>
+        <div class="auto-container clearfix">
+          <div class="pull-left logo-box">
+            <a href=""><img class="logo center" src="img/logo.png" style="width: 200px;">
+              <!-- <h3 align="center" style="color:white;text-transform: uppercase;">Hawks Business <br />SOLUTIONS</h3>
+              <p align="center" style="color:white">"Rise Above Rest"</p> -->
+              </table>
+            </a>
+          </div>
+          <div class="nav-outer clearfix">
+            <nav class="main-menu navbar-expand-md">
+              <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                <ul class="navigation clearfix">
+                  <li><a href="index.html">Home</a></li>
+                  </li>
+                  <li><a href="aboutus.html">About us</a></li>
+                  <li class="dropdown"><a href="#">Our Services</a>
+                    <ul>
+                      <li><a href="#">External / Internal Audit</a></li>
+                      <li><a href="#">Feasibilities Study / Business Plan</a></li>
+                      <li><a href="#">Company Formation / Liquidation</a></li>
+                      <li><a href="#">VAT Registration / Return Filing</a></li>
+                      <li><a href="#">VAT Reconsideration / Penalties</a></li>
+                      <li><a href="#">Book Keeping Other Accounting Services</a></li>
+                      <li><a href="#">Information Technology</a></li>
+                      <li><a href="#">Legal Services / Agreements</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="careers.html">Career</a></li>
+                  <li><a href="contactus.html">Contact us</a></li>
+                </ul>
+              </div>
+            </nav>
 
-.switch input {display:none;}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #33BBFF;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #33BBFF;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(55px);
-  -ms-transform: translateX(55px);
-  transform: translateX(55px);
-}
-
-/*------ ADDED CSS ---------*/
-.oon
-{
-  display: none;
-}
-
-.oon, .ooff
-{
-  color: white;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 50%;
-  left: 50%;
-  font-size: 10px;
-  font-family: Verdana, sans-serif;
-}
-
-input:checked+ .slider .oon
-{display: block;}
-
-input:checked + .slider .ooff
-{display: none;}
-
-/*--------- END --------*/
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;}
+            <div class="outer-box clearfix">
 
 
-
- #b{
-
- display: none;
-
- }
-</style>
-<div id="a">
-</div>
-<div id="b">
-</div>
-<script>
-
-
-function myFunction() {
-  var x = document.getElementById("a");
-  var y = document.getElementById("b");
-  if (x.style.display == "none") {
+              <div class="phone-box">
+                <div class="box-inner">
+                  <span class="icon flaticon-smartphone-1"></span>
+                  Call US Today!
+                  <a style="color:white" href="tel:+971 52 598 3791"><strong>+971 52 598 3791</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
+      <div class="sticky-header">
+        <div class="auto-container clearfix">
+
+          <div class="logo pull-left">
+            <a href="index.html" title=""><img class="logo" src="images/logo.png" alt="" title=""></a>
+          </div>
+
+          <div class="pull-right">
+
+            <nav class="main-menu">
+
+            </nav>
+
+            <div class="outer-box clearfix">
+
+
+              <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+        <nav class="menu-box">
+          <div class="nav-logo"><a href="index.html"><img class="center" src="images/logo.png" alt="" title=""></a>
+          </div>
+          <div class="menu-outer"></div>
+        </nav>
+      </div>
+    </header>
+
+
+    <section class="page-title" style="background-image:url(images/background/contactus.jpg)">
+      <div class="auto-container">
+        <h1>Contact Us</h1>
+      </div>
+    </section>
+
+
+    <section class="contact-info-section">
+      <div class="auto-container">
+
+        <div class="sec-title centered">
+          <h2>Contact Details</h2>
+        </div>
+        <div class="row clearfix">
+
+          <div class="info-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="icon flaticon-location-pin"></div>
+              <h5>Location</h5>
+              <div class="text">JLT, Cluster I DMCC, Dubai, United Arab Emirates </div>
+            </div>
+          </div>
+
+          <div class="info-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="icon flaticon-smartphone"></div>
+              <h5>Phone</h5>
+              <ul class="info-list">
+                <li><a href="tel:+971 52 598 3791">+971 52 598 3791</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="info-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="icon flaticon-email-3"></div>
+              <h5>Email</h5>
+              <ul class="info-list">
+                <li>info@hawks.com</li></br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   <!-- Contact Section Start -->
+   <section class="contact-section contact-style-two pb-100">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Ask Any Question</h2>
+            <p>Found parents would couldn't said on. That, feedback there made he was may blind you simple, its yet
+                a own blind you ago hand.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="contact-area">
+                    <form id="contactForm" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control" required
+                                        data-error="Please enter your name" placeholder="Your Name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control" required
+                                        data-error="Please enter your email" placeholder="Your Email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" name="number" id="number" class="form-control" required
+                                        data-error="Please enter your number" placeholder="Phone Number">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="subject" id="subject" class="form-control" required
+                                        data-error="Please enter your subject" placeholder="Your Subject">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <textarea name="message" class="message-field" id="message" cols="30" rows="5"
+                                        required data-error="Please type your message"
+                                        placeholder="Write Message"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 text-center">
+                                <button type="submit" onclick="sendEmail()"  class="default-btn contact-btn">
+                                    Send Message
+                                </button>
+                                <div id="msgSubmit" class="h3 alert-text text-center hidden"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
 
 
 
-    x.style.display = "block";
-	y.style.display = "none";
-	changeLanguage('ar');
-
-  } else {
 
 
-    x.style.display = "none";
-	y.style.display = "block";
-	changeLanguage('en');
+      <div id="footer">
+        <footer id="header" class="footer-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="footer-widget">
+                  <a>
+                    <img src="img/logo.jpg" alt="logo">
+                  </a>
+                  <ul>
+                    <li>
+                      <i class="icofont-phone"></i>
+                      <a href="tel:00971 56 6495103">
+                        00971 56 6495773
+                      </a>
+                    </li>
+                    <li>
+                      <i class="icofont-ui-message"></i>
+                      <a href="mailto:hello@abfshipping.com">
+                        hello@hawks.com
+                      </a>
+                    </li>
+                    <li class="footer_address">
+                      <i class="icofont-location-pin"></i>
+                      JLT, Cluster I DMCC, Dubai, United Arab Emirates
+                    </li>
+                  </ul>
+                  <div class="footer-social">
+                    <a href="#" target="_blank">
+                      <i class="icofont-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                      <i class="icofont-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                      <i class="icofont-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                      <i class="icofont-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="footer-widget">
+                  <h3>Our Services</h3>
+                  <ul>
+                    <li>
+                      <a>Internal & External Audit</a>
+                    </li>
+                    <li>
+                      <a>Accounting & Bookkeeping</a>
+                    </li>
+                    <li>
+                      <a>Payroll Outsourcing</a>
+                    </li>
+                    <li>
+                      <a>VAT Filling, Registration & De-Registration</a>
+                    </li>
+                    <li>
+                      <a>Company Incorporation & Liquidation</a>
+                    </li>
+                    <li>
+                      <a>Bussiness Advisory</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="footer-widget">
+                  <h3>Our Support</h3>
+                  <ul>
+                    <li>
+                      <a>Privacy &amp; Policy</a>
+                    </li>
+                    <li>
+                      <a>FAQS</a>
+                    </li>
+                    <li>
+                      <a>Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                      <a>Contact Us</a>
+                    </li>
+                    <li>
+                      <a>About Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="footer-widget">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li>
+                      <a>Home</a>
+                    </li>
+                    <li>
+                      <a>About Us</a>
+                    </li>
+                    <li>
+                      <a>Our Services</a>
+                    </li>
+                    <li>
+                      <a>Our Blog</a>
+                    </li>
+                    <li>
+                      <a>Eemrgency Support</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright-area">
+            <p>Copyright @Hawaks All Rights Reserved by <a href="#" target="_blank">Hawaks Business Solutions</a>
+            </p>
+          </div>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </footer>
 
 
-  }
+
+        <!-- <footer class="main-footer">
+        <div class="auto-container">
+          <div class="row wow bounceInLeft" data-wow-delay="0.4s">
+
+            <div class="widgets-section">
+
+              <div class="row clearfix">
+
+                <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                  <div class="row clearfix">
+
+                    <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                      <div class="footer-widget logo-widget">
+                        <div>
+                          <a href="index-2.html"><img class="logo" src="images/logo.png" width="100px" height="100px"
+                              alt="" /></a>
+                        </div>
+                        <div class="text">Wide variety of services, Executed by our diverse Team Of Accounting & Finance
+                          Specialists.
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                      <div class="footer-widget links-widget">
+                        <h5>Useful links</h5>
+                        <ul class="footer-list">
+                          <li><a href="index-2.html">Home</a></li>
+                          <li><a href="aboutus.html">About Us</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="careers.html">Career</a></li>
+                          <li><a href="packages.html">Packages</a></li>
+                          <li><a href="contactus-2.html">Contact Us</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                  <div class="row clearfix">
+
+                    <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                      <div class="footer-widget contact-widget">
+                        <h5>Office Info</h5>
+                        <ul>
+                          <li>
+                            <span class="icon flaticon-call-1"></span>
+                            <a href="tel:+971 52 598 3791">+971 52 598 3791</a>
+                          </li>
+                          <li>
+                            <span class="icon flaticon-email-2"></span>
+                            <a href="cdn-cgi/l/email-protection.html#7910171f16390b100a1c1b0a571a1614"><span
+                                class="__cf_email__"
+                                data-cfemail="de97b0b8b19eacb7adbbbcadf0bdb1b3">[email&#160;protected]</span></a>
+                          </li>
+                          <li>
+                            <span class="icon flaticon-maps-and-flags"></span>
+                            <b>Dubai Office: </b> Office 1701, Ontario Tower, Business Bay, Dubai, UAE. <br />
+                          </li>
+                          <li> <span class="icon flaticon-maps-and-flags"></span>
+                            <b>Ajman Office: </b> B-1106-64 Grand Tower , Ajman, UAE.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
 
 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="auto-container">
+              <div class="copyright">Copyright 2021, Rise Business Solutions. All Rights Reserved.</div>
+            </div>
+          </div>
+        </div>
+      </footer> -->
+      </div>
+  </div>
 
 
-  var trans = jQuery('select.goog-te-combo');
-	trans.val('fr')
-	trans.change();
+  <style>
+    #myBtn {
 
+      position: fixed;
+      bottom: 20px;
+      right: 0px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
 
+    #myBtn2 {
 
+      position: fixed;
+      bottom: 20px;
+      left: 0px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+  </style>
+  <a href="https://wa.me/+971 52 598 3791"> <img src="wa.png" width="80px" height="80px" id="myBtn"></a>
+  <div id="myBtn2">
+    <label class="switch notranslate">
+      <input type="checkbox" id="togBtn" onclick="myFunction()">
+      <div class="slider round">
 
+        <span class="ooff">English</span>
+        <span class="oon">عربي</span>
 
-}
+      </div>
+    </label>
+  </div>
 
+  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/tilt.jquery.min.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
+  <script src="js/owl.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/nav-tool.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+    <!-- ✅ FIRST - load jquery ✅ -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- ✅ SECOND - load jquery validate ✅ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+      integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-
-
-
-
+    <!-- ✅ THIRD - load additional methods ✅ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"
+      integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  <script src="js/contactForm.js"></script>
+  <script src=
+  "https://smtpjs.com/v3/smtp.js">
 </script>
+  <script type="text/javascript">
 
-<div style="display:none" align="center" id="google_translate_element"></div>
-<script type="text/javascript">
-		function googleTranslateElementInit() {
-			new google.translate.TranslateElement(
-				{pageLanguage: '', includedLanguages:'en,ar'},
-				'google_translate_element'
-			);
-		}
-	</script>
-<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit">
-	</script>
+    function sendEmail() {
+      var name = $("#name").val();
+        var email = $("#email").val();
+        var msg_subject = $("#msg_subject").val();
+        var phone_number = $("#phone_number").val();
+        var message = $("#message").val();
 
-<div class="auto-container clearfix">
-<div class="pull-left logo-box">
-<div class="logo"><a href="index-2.html"><img src="images/logo.png" alt="" title=""></a></div>
-</div>
-<div class="nav-outer clearfix">
-
-<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-
-<nav class="main-menu navbar-expand-md">
-<div class="navbar-header">
-
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-</div>
-<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-<ul class="navigation clearfix">
-<li class=""><a href="index-2.html">Home</a>
-</li>
-<li class=""><a href="aboutus.html">About Us</a>
-</li>
-<li class="dropdown"><a href="#">Our Services</a>
-<ul>
-<li><a href="#">External / Internal Audit</a></li>
-<li><a href="#">Feasibilities Study / Business Plan</a></li>
-<li><a href="#">Company Formation / Liquidation</a></li>
-<li><a href="#">VAT Registration / Return Filing</a></li>
-<li><a href="#">VAT Reconsideration / Penalties</a></li>
-<li><a href="#">Book Keeping Other Accounting Services</a></li>
-<li><a href="#">Information Technology</a></li>
-<li><a href="#">Legal Services / Agreements</a></li>
-</ul>
-</li>
-<li><a href="careers.html">Career</a></li>
-<li><a href="packages.html">Packages</a></li>
-<li class="current dropdown"><a href="contact.html">Contact us</a></li>
-</ul>
-</div>
-</nav>
-
-<div class="outer-box clearfix">
-
-
-<div class="phone-box">
-<div class="box-inner">
-<span class="icon flaticon-smartphone-1"></span>
-Call US Today!
-<a style="color:white" href="tel:+971 52 598 3791"><strong>+971 52 598 3791</strong></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="sticky-header">
-<div class="auto-container clearfix">
-
-<div class="logo pull-left">
-<a href="index-2.html" title=""><img src="images/logo-small.png" alt="" title=""></a>
-</div>
-
-<div class="pull-right">
-
-<nav class="main-menu">
-
-</nav>
-
-<div class="outer-box clearfix">
-
-
-<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="mobile-menu">
-<div class="menu-backdrop"></div>
-<div class="close-btn"><span class="icon flaticon-multiply"></span></div>
-<nav class="menu-box">
-<div class="nav-logo"><a href="index-2.html"><img src="images/logo-2.html" alt="" title=""></a></div>
-<div class="menu-outer"></div>
-</nav>
-</div>
-</header>
-
-
-<section class="page-title" style="background-image:url(images/background/contactus.jpg)">
-<div class="auto-container">
-<h1>Contact Us</h1>
-</div>
-</section>
-
-
-<section class="contact-info-section">
-<div class="auto-container">
-
-<div class="sec-title centered">
-<h2>Contact Details</h2>
-</div>
-<div class="row clearfix">
-
-<div class="info-block col-lg-4 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="icon flaticon-location-pin"></div>
-<h5>Location</h5>
-<div class="text">Office location B-1106-64 Grand Tower , Ajman, United Arab Emirates </div>
-</div>
-</div>
-
-<div class="info-block col-lg-4 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="icon flaticon-smartphone"></div>
-<h5>Phone</h5>
-<ul class="info-list">
-<li><a href="tel:+971 52 598 3791">+971 52 598 3791</a></li>
-<li><a href="tel:+971 54 7382 381">+971 54 7382 381</a></li>
-</ul>
-</div>
-</div>
-
-<div class="info-block col-lg-4 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="icon flaticon-email-3"></div>
-<h5>Email</h5>
-<ul class="info-list">
-<li><a href="cdn-cgi/l/email-protection.html#6a03040c052a1803190f081944090507"><span class="__cf_email__" data-cfemail="ea83848c85aa9883998f8899c4898587">[email&#160;protected]</span></a></li></br>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="contact-form-section">
-<div class="auto-container">
-
-<div class="sec-title centered">
-<h2>Send us a message</h2>
-</div>
-
-<div class="contact-form">
-
-<form method="post" action="https://www.risebs.com/sendemail.php" id="contact-form">
-<div class="row clearfix">
-<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-<input type="text" name="username" placeholder="Name" required>
-</div>
-<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-<input type="email" name="email" placeholder="Email" required>
-</div>
-<div class="col-lg-4 col-md-12 col-sm-12 form-group">
-<input type="text" name="phone" placeholder="Phone" required>
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-<textarea name="message" placeholder="Message"></textarea>
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-<button class="theme-btn btn-style-two" type="submit" name="submit-form"><span class="txt">Submit now <i class="arrow flaticon-right"></i></span></button>
-</div>
-</div>
-</form>
-<br><br>
-
-</div>
-</div>
-</section>
-
-
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1e2cc-AWnaCRvFtcLvC7ehGDJMfrSd_oC" width="100%" height="480"></iframe>
-
-
-<footer class="main-footer">
-<div class="auto-container">
-
-<div class="widgets-section">
-
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
-<div class="row clearfix">
-
-<div class="big-column col-lg-6 col-md-12 col-sm-12">
-<div class="row clearfix">
-
-<div class="footer-column col-lg-7 col-md-6 col-sm-12">
-<div class="footer-widget logo-widget">
-<div class="logo">
-<a href="index-2.html"><img src="images/logo.png" alt="" /></a>
-</div>
-<div class="text">Wide variety of services, Executed by our diverse Team Of Accounting & Finance Specialists.
-</div>
-
-<ul class="social-nav">
-<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-</ul>
-</div>
-</div>
-
-<div class="footer-column col-lg-5 col-md-6 col-sm-12">
-<div class="footer-widget links-widget">
-<h5>Useful links</h5>
-<ul class="footer-list">
-<li><a href="index-2.html">Home</a></li>
-<li><a href="aboutus.html">About Us</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="careers.html">Career</a></li>
-<li><a href="packages.html">Packages</a></li>
-<li><a href="#">Contact Us</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-<div class="big-column col-lg-6 col-md-12 col-sm-12">
-<div class="row clearfix">
-
-<div class="footer-column col-lg-6 col-md-6 col-sm-12">
-<div class="footer-widget contact-widget">
-<h5>Office Info</h5>
-<ul>
-<li>
-<span class="icon flaticon-call-1"></span>
-<a href="tel:+971 52 598 3791">+971 52 598 3791</a>
-</li>
-<li>
-<span class="icon flaticon-email-2"></span>
-<a href="cdn-cgi/l/email-protection.html#21484f474e615348524443520f424e4c"><span class="__cf_email__" data-cfemail="a2ebccc4cde2d0cbd1c7c0d18cc1cdcf">[email&#160;protected]</span></a>
-</li>
-<li>
-<span class="icon flaticon-maps-and-flags"></span>
-Office location B-1106-64 Grand Tower , Ajman, United Arab Emirates.
-</li>
-</ul>
-</div>
-</div>
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-bottom">
-<div class="auto-container">
-<div class="copyright">Copyright 2021, Rise Business Solutions. All Rights Reserved.</div>
-</div>
-</div>
-</footer>
-</div>
-
-
-<style>
-#myBtn {
-
-  position: fixed;
-  bottom: 20px;
-  right: 0px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn2 {
-
-  position: fixed;
-  bottom: 20px;
-  left: 0px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-
-</style>
-<a href="https://wa.me/+971 52 598 3791"> <img src="wa.png" width="80px" height="80px" id="myBtn"></a>
-<div id="myBtn2">
-<label class="switch notranslate">
-<input type="checkbox" id="togBtn" onclick="myFunction()">
-<div class="slider round">
-
-<span class="ooff">English</span>
-<span class="oon">عربي</span>
-
-</div>
-</label>
-</div>
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/tilt.jquery.min.js"></script>
-<script src="js/jquery.paroller.min.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/validate.js"></script>
-<script src="js/nav-tool.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/script.js"></script>
+        var data= "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message;
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "Enter your password",
+        To: 'receiver@email_address.com',
+        From: "sender@email_address.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
 </body>
 
 <!-- Mirrored from www.risebs.com/contactus.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jan 2023 08:58:28 GMT -->
+
 </html>
