@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hawaks Business Solutions - Contact Us </title>
+  <title>Hawks Business Solutions - Contact Us </title>
 
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -18,8 +18,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bellefair&amp;family=Open+Sans:wght@300;400;700;800&amp;family=Oswald:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet">
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -125,7 +125,7 @@
                       <li><a href="#">Legal Services / Agreements</a></li>
                     </ul>
                   </li>
-                  <li><a href="careers.html">Career</a></li>
+                  <li><a  >Career</a></li>
                   <li><a href="contactus.html">Contact us</a></li>
                 </ul>
               </div>
@@ -219,7 +219,7 @@
               <div class="icon flaticon-email-3"></div>
               <h5>Email</h5>
               <ul class="info-list">
-                <li>info@hawks.com</li></br>
+                <li>  info@hawksbusinesscom</li></br>
               </ul>
             </div>
           </div>
@@ -237,10 +237,10 @@
                 a own blind you ago hand.</p>
         </div>
 
-        <div class="row">
+        <div class="row" style="display: flex;justify-content: center;align-items: center;">
             <div class="col-lg-10 offset-lg-1">
                 <div class="contact-area">
-                    <form id="contactForm" method="post">
+                    <form id="contactForm">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -284,7 +284,7 @@
                             </div>
 
                             <div class="col-lg-12 col-md-12 text-center">
-                                <button type="submit" onclick="sendEmail()"  class="default-btn contact-btn">
+                                <button type="submit" class="default-btn contact-btn">
                                     Send Message
                                 </button>
                                 <div id="msgSubmit" class="h3 alert-text text-center hidden"></div>
@@ -315,18 +315,17 @@
                   <ul>
                     <li>
                       <i class="icofont-phone"></i>
-                      <a href="tel:00971 56 6495103">
-                        00971 56 6495773
+                      <a href="tel:971525983791">
+                        +971525983791
                       </a>
                     </li>
                     <li>
                       <i class="icofont-ui-message"></i>
                       <a href="mailto:hello@abfshipping.com">
-                        hello@hawks.com
+                          info@hawksbusinesscom
                       </a>
                     </li>
                     <li class="footer_address">
-                      <i class="icofont-location-pin"></i>
                       JLT, Cluster I DMCC, Dubai, United Arab Emirates
                     </li>
                   </ul>
@@ -418,7 +417,7 @@
             </div>
           </div>
           <div class="copyright-area">
-            <p>Copyright @Hawaks All Rights Reserved by <a href="#" target="_blank">Hawaks Business Solutions</a>
+            <p>Copyright @Hawks All Rights Reserved by <a href="#" target="_blank">Hawks Business Solutions</a>
             </p>
           </div>
           <div class="lines">
@@ -461,7 +460,7 @@
                           <li><a href="index-2.html">Home</a></li>
                           <li><a href="aboutus.html">About Us</a></li>
                           <li><a href="#">Services</a></li>
-                          <li><a href="careers.html">Career</a></li>
+                          <li><a  >Career</a></li>
                           <li><a href="packages.html">Packages</a></li>
                           <li><a href="contactus-2.html">Contact Us</a></li>
                         </ul>
@@ -544,7 +543,7 @@
       border-radius: 4px;
     }
   </style>
-  <a href="https://wa.me/+971 52 598 3791"> <img src="wa.png" width="80px" height="80px" id="myBtn"></a>
+  <a href="https://wa.me/+971525983791"> <img src="wa.png" width="80px" height="80px" id="myBtn"></a>
   <div id="myBtn2">
     <label class="switch notranslate">
       <input type="checkbox" id="togBtn" onclick="myFunction()">
@@ -596,33 +595,6 @@
       referrerpolicy="no-referrer"
     ></script>
   <script src="js/contactForm.js"></script>
-  <script src=
-  "https://smtpjs.com/v3/smtp.js">
-</script>
-  <script type="text/javascript">
-
-    function sendEmail() {
-      var name = $("#name").val();
-        var email = $("#email").val();
-        var msg_subject = $("#msg_subject").val();
-        var phone_number = $("#phone_number").val();
-        var message = $("#message").val();
-
-        var data= "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message;
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "sender@email_address.com",
-        Password: "Enter your password",
-        To: 'receiver@email_address.com',
-        From: "sender@email_address.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
-    }
-  </script>
 </body>
 
 <!-- Mirrored from www.risebs.com/contactus.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jan 2023 08:58:28 GMT -->
